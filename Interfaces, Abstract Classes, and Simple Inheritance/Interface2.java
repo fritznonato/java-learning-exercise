@@ -1,19 +1,3 @@
-interface Animal {
-	void eat();
-}
-
-class Zebra implements Animal {
-	public void eat(){
-		System.out.println("Eating tall grass in the savanna...");
-	}
-}
-
-class Lion implements Animal {
-	public void eat() {
-		System.out.println("Eating meat...");
-	}
-}
-
 class Solution {
 	public static void main(String[] args) {
 		Zebra zebra = new Zebra();
@@ -21,5 +5,17 @@ class Solution {
 
 		Lion lion = new Lion();
 		lion.eat();
+	}
+}
+
+class Zebra {
+	public void eat() {
+		System.out.println("Eating tall grass in the savanna...");
+	}
+}
+
+class Lion {
+	public void eat() {
+		System.out.println("Eating meat...");
 	}
 }
